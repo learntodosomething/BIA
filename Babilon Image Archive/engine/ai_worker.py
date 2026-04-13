@@ -1,8 +1,3 @@
-"""
-Babylon Image Archive — AI Worker Thread  v3
-- Cancel support (_cancelled flag)
-- progress signal a loading bar-hoz
-"""
 from PyQt6.QtCore import QThread, pyqtSignal
 
 
