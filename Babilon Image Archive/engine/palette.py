@@ -1,11 +1,3 @@
-"""
-Babylon Image Archive — Colour Palette Engine  (KDTree + vectorized)
-
-Nagy palettáknál (vps=1 → 32768 szín) a batch-alapú L1 keresés
-memória-robbanást okoz. Megoldás: scipy cKDTree (O(log K) keresés).
-Kis palettáknál (≤512 szín) a numpy broadcasting gyorsabb marad.
-"""
-
 import math
 import numpy as np
 from enum import IntEnum
