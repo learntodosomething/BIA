@@ -1,8 +1,3 @@
-"""
-Babylon Image Archive — Image ↔ ID conversion  (vectorized)
-No Python loops over pixels — everything goes through numpy.
-"""
-
 import numpy as np
 from PIL import Image as PilImage
 from engine.id_codec import ImageID
