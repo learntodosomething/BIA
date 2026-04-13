@@ -119,12 +119,6 @@ def image_to_indices_vectorized(
     palette: Palette,
     values_per_segment: int,
 ) -> np.ndarray:
-    """
-    Paletta kvantálás:
-      - GRAYSCALE: teljesen vektorizált luminance számítás (O(N))
-      - COLOR, kis paletta (≤512): numpy batch broadcasting (gyors)
-      - COLOR, nagy paletta (>512): scipy cKDTree (O(N log K), nincs memória-robbanás)
-    """
     ensure_palettes()
     ei    = _exp_idx(values_per_segment)
     table = _lut[int(palette)][ei]
