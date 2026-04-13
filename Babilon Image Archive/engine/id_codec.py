@@ -1,15 +1,3 @@
-"""
-Babylon Image Archive — ID Codec  v2
-
-Két formátum:
-  .bid  – bináris, zlib tömörített, opcionálisan titkosított
-  Image Token – base85 szöveges, önállóan tartalmazza a képet,
-                BID fájl nélkül is visszaadja a képet.
-
-A korábbi wchar-alapú szöveg formátum el lett hagyva:
-zlib+base85 ~40-60%-kal kisebb méretet ad azonos minőségnél.
-"""
-
 import math, zlib, base64, struct, random
 from typing import List
 
