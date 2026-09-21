@@ -44,6 +44,11 @@ Compression ratio strongly depends on image content (much better on structured /
 - At least 8 GB VRAM recommended for comfortable AI generation
 - 12 GB free disk space recommended when using the diffusion model
 
+## Thesis
+
+Full Master's thesis (Hungarian):  
+[Diplomamunka.pdf](docs/Diplomamunka.pdf)
+
 ## Quick Start
 
 ```bash
